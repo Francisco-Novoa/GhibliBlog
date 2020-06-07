@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/app.css"
+import Banner from "./banner/banner";
+import Sidebar from "./sidebar/sidebar";
+import Main from "./main/main"
+import Footer from "./footer/footer";
+import Navbar from "./navbar/navbar";
+
+import { Container, Row, Col, } from "react-bootstrap/"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Container fluid>
+          <Navbar />
+        <Row>
+          <Col>
+            <Banner />
+          </Col>
+        </Row>
+        <Row >
+          <Col sm={2}  >
+            <Sidebar />
+          </Col>
+          <Col sm={10}>
+            <Main />
+          </Col>
+        </Row>
+        <Row>
+          <Col >
+            <Footer />
+          </Col>
+        </Row>
+      </Container>
   );
 }
 

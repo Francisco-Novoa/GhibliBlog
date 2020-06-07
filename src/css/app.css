@@ -1,0 +1,49 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+#banner{
+    object-fit: cover;
+    height: 16rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar{
+display: flex;
+flex-direction: column;
+height: 100%;
+justify-content: space-around;
+}
+
+.sidebar-item{
+    height: 5rem;
+}
+
+.blocky{
+    padding-left: 0;
+    padding-right: 0
+}
+
+.flexy{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4rem;
+}
+
+.between{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 4rem;
+}
+.bigger-buttons{
+    height: 6rem;
+}
