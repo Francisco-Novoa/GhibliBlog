@@ -9,31 +9,29 @@ const totoro = "./totoro.webp"
 
 export default function TopLinks() {
     return (
-        <Container fluid className="blocky">
+        <Container fluid className="blocky ">
             <Row className="blocky">
                 <Col className="blocky">
-                    <Navbar bg="light" expand="lg" style={{ height: "100%" }}>
+                    <Navbar  expand="lg" style={{ height: "100%" }}>
                         <Navbar.Brand href="#home">
                             <img src={require(`${totoro}`)} height="100px" alt="" />
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="mr-auto flexy">
+                            <Nav className="mr-auto flexy "  >
                                 <Nav.Link
                                     href="https://www.linkedin.com/in/francisconovoaparada/">
-                                    <FaLinkedinIn size="45px" />
+                                    <FaLinkedinIn size="45px" style={{color:"#D3D3D3"}} />
                                 </Nav.Link>
                                 <Nav.Link
                                     href="https://github.com/Francisco-Novoa">
-                                    <AiOutlineGithub size="45px" />
+                                    <AiOutlineGithub size="45px" style={{color:"#D3D3D3"}} />
                                 </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
                 </Col>
-
             </Row>
-
         </Container>
     )
 }
